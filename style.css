@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #dff9ff 0%, #a9d5df 25%, #5d7077 60%, #20282c 100%);
+
+    color: #ffffff;
+}
+
+/* Cuadro principal */
+div {
+    width: 430px;
+    padding: 45px 35px;
+
+    text-align: center;
+
+    background: rgba(25, 35, 40, 0.88);
+    border: 1px solid #70e8ff;
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 15px rgba(112, 232, 255, 0.5),
+        0 0 40px rgba(112, 232, 255, 0.2);
+
+    backdrop-filter: blur(10px);
+}
+
+/* Título */
+div::before {
+    content: "Tamaño de pantalla";
+
+    display: block;
+    margin-bottom: 35px;
+
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 8px #70e8ff,
+        0 0 18px rgba(112, 232, 255, 0.7);
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 15px;
+
+    font-size: 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #ffffff;
+    background: #303b40;
+
+    border: 1px solid #6bdff5;
+    border-radius: 8px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #b9cbd0;
+}
+
+input:focus {
+    border-color: #ffffff;
+
+    box-shadow:
+        0 0 8px #70e8ff,
+        0 0 18px rgba(112, 232, 255, 0.5);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #162126;
+    background: #70e8ff;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 12px rgba(112, 232, 255, 0.5);
+}
+
+button:hover {
+    background: #ffffff;
+
+    box-shadow:
+        0 0 12px #70e8ff,
+        0 0 25px rgba(112, 232, 255, 0.8);
+
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 30px;
+    padding: 18px;
+
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    color: #70e8ff;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(112, 232, 255, 0.4);
+    border-radius: 8px;
+
+    text-shadow: 0 0 8px #70e8ff;
+}
+
